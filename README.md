@@ -1,6 +1,6 @@
 # sfr_decoder_ha
 
-![image-20220326225847650](C:\Users\thier\AppData\Roaming\Typora\typora-user-images\image-20220326225847650.png)
+![image-20220326225847650](image-20220326225847650.png)
 
 
 
@@ -17,19 +17,19 @@ This flow is built around 2 websocket nodes.
 
 You will need to enter the address of your decoder inside these nodes
 
-![image-20220326221030617](C:\Users\thier\AppData\Roaming\Typora\typora-user-images\image-20220326221030617.png)
+![image-20220326221030617](image-20220326221030617.png)
 
 
 
 ### STB7.json
 
-![image-20220326220023945](C:\Users\thier\AppData\Roaming\Typora\typora-user-images\image-20220326220023945.png)
+![image-20220326220023945](image-20220326220023945.png)
 
 ## Helpers
 
 Here are the helpers used
 
-![image-20220326222206742](C:\Users\thier\AppData\Roaming\Typora\typora-user-images\image-20220326222206742.png)
+![image-20220326222206742](image-20220326222206742.png)
 
 
 
