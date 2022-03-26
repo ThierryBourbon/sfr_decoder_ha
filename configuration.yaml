@@ -1,0 +1,69 @@
+ media_player:
+ - platform: universal
+   name: stb7
+   device_class: tv
+   commands:
+     turn_on:
+       service: input_boolean.turn_on
+       data: {}
+       target:
+         entity_id: input_boolean.stb7_state
+     turn_off:
+       service: input_boolean.turn_off
+       data: {}
+       target:
+         entity_id: input_boolean.stb7_state
+
+     volume_up:
+       service: input_number.increment
+       data: {}
+       target:
+         entity_id: input_number.stb7_volume_level
+     volume_down:
+       service: input_number.decrement
+       data: {}
+       target:
+         entity_id: input_number.stb7_volume_level
+     volume_mute:
+       service: input_boolean.toggle
+       data: {}
+       target:
+         entity_id: input_boolean.stb7_mute
+     volume_set:
+       service: input_number.set_value
+       data: 
+         value: "{{ volume_level }}"
+       target:
+         entity_id: input_number.stb7_volume_level
+     select_source:
+       service: input_select.select_option
+       data:
+         option: "{{ source }}" 
+       target:
+         entity_id: input_select.stb7_sources
+     media_play:
+       service: input_text.set_value
+       data: 
+         value: play
+       target:
+         entity_id: input_text.stb7_key
+     media_stop:
+       service: input_text.set_value
+       data: 
+         value: stop
+       target:
+         entity_id: input_text.stb7_key
+     media_pause:
+       service: input_text.set_value
+       data: 
+         value: pause
+       target:
+         entity_id: input_text.stb7_key
+   attributes:
+     state: input_boolean.stb7_state
+     volume_level: input_number.stb7_volume_level
+     source: input_select.stb7_sources
+     media_title: input_select.stb7_sources     
+     source_list: input_select.stb7_sources|options
+#     media_channel: input_select.stb7_sources
+     is_volume_muted: input_boolean.stb7_mute
