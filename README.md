@@ -15,7 +15,7 @@ Having little knowledge of python, I created a mediaplayer to manage my SFR deco
 
 This flow is built around 2 websocket nodes.
 
-You will need to enter the address of your decoder inside these nodes
+You will need to enter the address of your decoder inside these nodes  and lws-bidirectional-protocol in Subprotocol field
 
 ![image-20220326221030617](image-20220326221030617.png)
 
